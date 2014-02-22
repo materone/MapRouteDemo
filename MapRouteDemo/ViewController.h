@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
+#import "MapView.h"
+#import "Place.h"
+#import <CoreLocation/CoreLocation.h>
+@interface ViewController : UIViewController<CLLocationManagerDelegate>
+{
+    MapView* mapView;
+    Place *home;
+    Place* office;
+    CLLocationManager *locmanager;
+}
+@property (strong, nonatomic) Place* office;
+@property (strong, nonatomic) Place *home;
+@property (strong, nonatomic) IBOutlet UITextField *fromText;
+- (IBAction)search:(id)sender;
+- (IBAction)userCurrentLocation:(id)sender;
 @end
