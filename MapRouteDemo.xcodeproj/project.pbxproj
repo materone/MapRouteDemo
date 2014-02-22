@@ -18,6 +18,12 @@
 		2CA4C03316630B590052CF9E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA4C03216630B590052CF9E /* Default-568h@2x.png */; };
 		2CA4C03616630B590052CF9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA4C03516630B590052CF9E /* ViewController.m */; };
 		2CA4C03916630B590052CF9E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CA4C03716630B590052CF9E /* ViewController.xib */; };
+		2CA4C04016630B820052CF9E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA4C03F16630B820052CF9E /* MapKit.framework */; };
+		2CA4C04216630B880052CF9E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA4C04116630B880052CF9E /* CoreLocation.framework */; };
+		2CA4C04B16630BB00052CF9E /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA4C04416630BB00052CF9E /* MapView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2CA4C04C16630BB00052CF9E /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA4C04616630BB00052CF9E /* Place.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2CA4C04D16630BB00052CF9E /* PlaceMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA4C04816630BB00052CF9E /* PlaceMark.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2CA4C04E16630BB00052CF9E /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA4C04A16630BB00052CF9E /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +43,16 @@
 		2CA4C03416630B590052CF9E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2CA4C03516630B590052CF9E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2CA4C03816630B590052CF9E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		2CA4C03F16630B820052CF9E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2CA4C04116630B880052CF9E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2CA4C04316630BB00052CF9E /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
+		2CA4C04416630BB00052CF9E /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
+		2CA4C04516630BB00052CF9E /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		2CA4C04616630BB00052CF9E /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
+		2CA4C04716630BB00052CF9E /* PlaceMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceMark.h; sourceTree = "<group>"; };
+		2CA4C04816630BB00052CF9E /* PlaceMark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceMark.m; sourceTree = "<group>"; };
+		2CA4C04916630BB00052CF9E /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		2CA4C04A16630BB00052CF9E /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CA4C04216630B880052CF9E /* CoreLocation.framework in Frameworks */,
+				2CA4C04016630B820052CF9E /* MapKit.framework in Frameworks */,
 				2CA4C01D16630B580052CF9E /* UIKit.framework in Frameworks */,
 				2CA4C01F16630B580052CF9E /* Foundation.framework in Frameworks */,
 				2CA4C02116630B580052CF9E /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +91,8 @@
 		2CA4C01B16630B580052CF9E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2CA4C04116630B880052CF9E /* CoreLocation.framework */,
+				2CA4C03F16630B820052CF9E /* MapKit.framework */,
 				2CA4C01C16630B580052CF9E /* UIKit.framework */,
 				2CA4C01E16630B580052CF9E /* Foundation.framework */,
 				2CA4C02016630B580052CF9E /* CoreGraphics.framework */,
@@ -88,6 +108,14 @@
 				2CA4C03416630B590052CF9E /* ViewController.h */,
 				2CA4C03516630B590052CF9E /* ViewController.m */,
 				2CA4C03716630B590052CF9E /* ViewController.xib */,
+				2CA4C04316630BB00052CF9E /* MapView.h */,
+				2CA4C04416630BB00052CF9E /* MapView.m */,
+				2CA4C04516630BB00052CF9E /* Place.h */,
+				2CA4C04616630BB00052CF9E /* Place.m */,
+				2CA4C04716630BB00052CF9E /* PlaceMark.h */,
+				2CA4C04816630BB00052CF9E /* PlaceMark.m */,
+				2CA4C04916630BB00052CF9E /* RegexKitLite.h */,
+				2CA4C04A16630BB00052CF9E /* RegexKitLite.m */,
 				2CA4C02316630B580052CF9E /* Supporting Files */,
 			);
 			path = MapRouteDemo;
@@ -176,6 +204,10 @@
 				2CA4C02916630B580052CF9E /* main.m in Sources */,
 				2CA4C02D16630B580052CF9E /* AppDelegate.m in Sources */,
 				2CA4C03616630B590052CF9E /* ViewController.m in Sources */,
+				2CA4C04B16630BB00052CF9E /* MapView.m in Sources */,
+				2CA4C04C16630BB00052CF9E /* Place.m in Sources */,
+				2CA4C04D16630BB00052CF9E /* PlaceMark.m in Sources */,
+				2CA4C04E16630BB00052CF9E /* RegexKitLite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +289,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapRouteDemo/MapRouteDemo-Prefix.pch";
 				INFOPLIST_FILE = "MapRouteDemo/MapRouteDemo-Info.plist";
+				OTHER_LDFLAGS = "-licucore";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -268,6 +301,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MapRouteDemo/MapRouteDemo-Prefix.pch";
 				INFOPLIST_FILE = "MapRouteDemo/MapRouteDemo-Info.plist";
+				OTHER_LDFLAGS = "-licucore";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
